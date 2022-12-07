@@ -1,9 +1,9 @@
 # PRINCIPLES OF PROGRAMMING LANGUAGES
 
 This directory contains coding exercises done in HASKELL and PROLOG programming languages.
-if you want to test these please download the Haskell Intepreter from:
-- this link ( https://www.haskell.org/hugs/pages/downloading-May2006.htm )
-- and this link ( http://www.gprolog.org/ )
+if you want to test these please download the Intepreters from:
+- [Haskell]( https://www.haskell.org/hugs/pages/downloading-May2006.htm)
+-  [Prolog](http://www.gprolog.org/)
 ---
 
 ## Lab1.hs (HASKELL)
