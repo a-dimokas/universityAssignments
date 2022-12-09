@@ -6,6 +6,8 @@
 
 ### Part 1
 
+#### Classification Methods
+
 In this part of the course we were assigned to **Classify images of clothing** from images of the [fashion MNIST dataset](https://www.tensorflow.org/tutorials/keras/classification).
 The dataset consists of 60.000 images of 10 categories of clothing and another 10.000 for testing purposes.
 To run the code found in part1.py the installation of [Anaconda](www.anaconda.com) and Python3 is greatly advised. Also tensorflow and scikit are essential to install with the commands "conda isntall tensorflow" and "conda install scikit-learn scipy matplotlib" in Anaconda.
@@ -46,7 +48,7 @@ For Testing purposes we used the following evaluation metrics:
 <p>
   In this section some of the most notable function will be explained briefly.
   
-  - Preproccessing Data: For the preprocess of the data we formatted the data so that for each image
+  - **Preproccessing Data**: For the preprocess of the data we formatted the data so that for each image
 (28x28) has its data in vector format (1x784).
 Converted values 0-255 for each attribute to values from 0 to 1.
 Additionally, to reduce the learning time of the models, we kept from the datasets
@@ -70,7 +72,7 @@ feature of an image given a category.
   
 </p> 
 
-#### 3.Results 
+#### 4.Results 
 <p>
   
   - **k-NN**: for k = 1,5,10
@@ -134,3 +136,61 @@ its performance compared to previous methods
 ---
 
 ### Part 2
+
+#### Data Grouping Methods
+
+For this part we used the same dataset as in part 1.
+
+#### 1. Purpose
+
+<p>
+ The purpose of this exercise is
+to achieve the (unsupervised) analysis of their structure through
+of the process of grouping, i.e. of the optimal separation of the set
+data into K=10 groups
+</p> 
+
+
+#### 2.Testing 
+<p>
+For Testing purposes we used the following evaluation metrics:
+
+- **Purity** The category of each group is determined, after the end of grouping,
+by the majority real category among the group members.
+Then the accuracy (purity) is calculated by measuring the percentage of correctly 
+classified data
+
+- **F-measure** For each cluster, after specifying the majority category as the class
+cluster (as in the previous measure), find the TP (true positive), FP
+(false positive) and FN (false negative) and then the F1-score (see
+exercise1). In the end, the evaluation of the clustering method will result from the
+sum of F-measures for each cluster
+  
+![image](https://user-images.githubusercontent.com/91612373/206768818-b1540c39-2d00-4123-acfc-2f4966f16581.png)
+
+</p> 
+
+#### 3.Development 
+<p>
+  For the processing of the data we used 2 alternative type of data for the repsesantation of each image:
+  
+  - **R1**: 28x28=784 vector where each component will represent the
+brightness value of each pixel of the image. Normalized the values by dividing by 255 which is the maximum brightness value and
+corresponds to deep black for easier operations.
+  
+  - **R2**: luminance histogram using M bins (M = 16 or 32 or 64 or 128.
+  
+  Below we present the methods we developed and used in our metrics for the grouping of the data.
+
+  - **classic K-means clustering**: using Euclidean distance (L2), Manhattan distance (L1) and cosine distance.
+  
+  - **K-Medoid clustering**: only for R2 type data using symmetric Kullback- Libler (KL) distance, which is a function of distance between allocations.
+  
+  - **Hierarchical clustering**: using the divisive or linkage form of construction of the data tree for all of the above forms of distance.
+
+</p> 
+
+#### 4.Results 
+<p>
+  
+</p> 
