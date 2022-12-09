@@ -188,9 +188,94 @@ corresponds to deep black for easier operations.
   
   - **Hierarchical clustering**: using the divisive or linkage form of construction of the data tree for all of the above forms of distance.
 
+ 
+  ##### Next we will explain the function of the part2.py to better understand the development of these function wihtout using any in-built methods of python.
+  
+  - **classic K-means clustering**: 
+  
+  <p> 
+  
+  **distances** function calculates the location of the largest 'type' distance between all
+of points and centroids. It is used to find new centroids when these do not
+contain any samples.
+  
+  **closeCentroid** finds the closest centroids for all points (samples). Basically it assigns to each sample a centroid (the closest according to the distance). this  function is also used by the Kmedoid algorithm.
+  
+  **updateCentroids** updates the centroids after closeCentoid.
+  
+  </p> 
+  
+  - **K-Medoid clustering**: only for R2 type data using symmetric Kullback- Libler (KL) distance, which is a function of distance between allocations.
+  
+  <p> 
+  
+  **centroidsR2** takes as an argument the number m (where m is the size of the bins) and
+initializes the centroids
+  
+  **kl_divergence** returns the similarity between two equal one-dimensional arrays
+according to Kullback Libler symmetric distance.
+  
+  **closeCentroid**
+  
+  **updateR2** updates the group centers as before.
+  
+  **leastSim** returns a table with the positions of the smallest similarities. It is used when
+we want to assign a new centroid to a group that does not contain any samples.
+  
+  </p> 
+  
 </p> 
 
 #### 4.Results 
 <p>
   
+  
+  - **classic K-means clustering**: 
+  
+  using Euclidean distance (L2) 
+  
+  ![image](https://user-images.githubusercontent.com/91612373/206770719-f32a3ef6-2b76-413e-a8b0-e6eb3deed2c4.png)
+
+  using Manhattan distance (L1) 
+  
+  ![image](https://user-images.githubusercontent.com/91612373/206770729-6b26701f-e155-415d-858f-af0118a65740.png)
+
+  using cosine distance.
+  
+  ![image](https://user-images.githubusercontent.com/91612373/206770761-59c9192d-3dc3-4a46-80dd-c13ef2a9d704.png)
+
+  
+  From the metric evaluations of the algorithm we conclude that all distances
+used give similar results in terms of efficacy
+of the grouping they carry out. Some notable observations are that
+by increasing the number of iterations the algorithm makes, it gets better at finding them
+groups of the data and according to the measurements made it was found as
+Manhattan distance is the best distance.
+  
+  
+  
+  - **K-Medoid clustering**: only for R2 type data using symmetric Kullback-Libler (KL) distance, which is a function of distance between allocations.
+  
+  ![image](https://user-images.githubusercontent.com/91612373/206770954-a5f3533b-b588-4a75-9907-ddcbada8f6ed.png)
+  
+  The results differ, due to the random selection of centroids of the algorithm, from
+iteration to iteration. From these results we can see that in decreasing order in terms of counts and with M the size of the bins, we have the following:
+-average purity: M = [16,64,128,32]
+-F measure: M = [32,16,128,64]
+At last for bin size = 16 we have the best results.
+
+  - **Hierarchical clustering**: using the divisive or linkage form of construction of the data tree for all of the above forms of distance.
+  
+  Euclidean distance:
+  
+  ![image](https://user-images.githubusercontent.com/91612373/206771636-3b8b9e30-d6f5-41e7-a9c4-66638ad1e4d2.png)
+
+  Manhattan distance: 
+  
+  ![image](https://user-images.githubusercontent.com/91612373/206771701-2b80f18b-9dc3-4d8d-8c78-f0229855848e.png)
+
+  Cosine distance:
+  
+  ![image](https://user-images.githubusercontent.com/91612373/206771726-2a94acb9-534c-46be-a69b-e668bcf68019.png)
+
 </p> 
