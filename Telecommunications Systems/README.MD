@@ -46,17 +46,26 @@
 
 ## Part 2
 
-- Es/No = 5dB :
-Experimental SER → 0.073835
-Theoretical SER → 0.073938
-Deviation : 0.000103
+- **Es/No** = 5dB :
 
-- Es/No = 8dB :
-Experimental SER → 0.011902
-Theoretical SER → 0.011973
-Deviation : 0.000071
+**Experimental SER** → 0.073835
 
-- Es/No = 10dB :
-Experimental SER → 0.001595
-Theoretical SER → 0.0015648
-Deviation : 0.0000302
+**Theoretical SER** → 0.073938
+
+**Deviation** : 0.000103
+
+- **Es/No** = 8dB :
+
+**Experimental SER** → 0.011902
+
+**Theoretical SER** → 0.011973
+
+**Deviation** : 0.000071
+
+- **Es/No** = 10dB :
+
+**Experimental SER** → 0.001595
+
+**Theoretical SER** → 0.0015648
+
+**Deviation** : 0.0000302
