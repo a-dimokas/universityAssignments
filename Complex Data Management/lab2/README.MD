@@ -30,6 +30,11 @@ object. The MBR, of type [x-low, x-high, y-low, y-high], is either the MBR of a 
 isnonleaf=1) or of an object (if isnonleaf=0).
 </p> 
 
+#### Development details
+
+<p> To calculate the z-values by which objects are sorted in the leaves of the tree
+the interleave_latlng function of the pymorton file was used.</p> 
+
 ---
 
 ## Part 2 (Range queries):
