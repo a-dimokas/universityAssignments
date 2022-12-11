@@ -17,7 +17,7 @@ fusion, union, intersection, difference and addition.
 - **Lab 2 (SPATIAL-DATA Rtree)** : <p> R-Tree construction via Bulk Loading, Range queries and kNN queries.
 </p>
 
-- **Lab 3 (SPATIAL NETWORKS and TOP-X QUERIES)** : <p> Memory storage, indexing, Dijkstra, A* and Best meeting point.
+- **Lab 3 (SPATIAL NETWORKS and TOP-X QUERIES)** : <p> Memory storage, indexing, Dijkstra and A* .
 </p>
 
 
