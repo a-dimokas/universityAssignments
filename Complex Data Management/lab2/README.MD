@@ -62,7 +62,7 @@ The function checkMBR(W,mbr): checks if the mbr satisfies the query
 window W with the filter step method. Below is a graphic representation of it
 rationale for the condition that checks if mbr is "inside" window W:
 
-
+![image](https://user-images.githubusercontent.com/91612373/206917572-aba7457f-8819-4d92-8996-7abb6516d806.png)
 
 In the event that none of the conditions apply, the shape is inside W.
 
