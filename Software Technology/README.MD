@@ -25,3 +25,16 @@ The Text2SpeechEditor enables the creation and management of text documents. A t
 - The date that it was last saved.
 - The contents of the document. The contents of the document are structured as a list of lines. Each line consists of a list of words.
 
+##### **3 Design Architecture**
+
+Some important UML designs are presented below:
+
+
+![image](https://user-images.githubusercontent.com/91612373/207367072-ab2875c6-5dfa-4734-b07c-ebb0c121c72b.png)
+
+![image](https://user-images.githubusercontent.com/91612373/207367206-889afaa7-5823-41b9-ae4e-d4055382c3e7.png)
+
+![image](https://user-images.githubusercontent.com/91612373/207367292-18d0f5e3-e6de-43a0-bd4e-52fd7229c435.png)
+
+
+
